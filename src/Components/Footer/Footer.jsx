@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
 import {
-  ShoppingBag,
   Mail,
   Phone,
   MapPin,
   ArrowUpRight,
 } from "lucide-react";
+import Logo from "../../assets/Images/Logo.png";
+
 
 const Footer = () => {
   return (
@@ -17,12 +18,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="inline-flex items-center gap-2">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-indigo-500">
-                <ShoppingBag size={25} />
-              </div>
-              <span className="text-2xl font-bold tracking-tight">
-                SHOP<span className="text-indigo-400">.CO</span>
-              </span>
+              <img src={Logo} alt="Logo" className="h-9 w-auto" />     
             </Link>
 
             <p className="mt-5 max-w-xs text-sm leading-7 text-blue-100/70">
